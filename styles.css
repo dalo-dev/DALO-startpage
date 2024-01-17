@@ -55,3 +55,12 @@ input:focus {
   font-size: 2rem;
   border-bottom: solid 2px var(--text-color);
 }
+
+.common-sites {
+  display: flex;
+  justify-content: space-between;
+}
+
+.common-sites div {
+  padding: 2rem;
+}
