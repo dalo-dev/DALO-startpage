@@ -2,6 +2,10 @@
 :root {
   --background-color: #24283b;
   --text-color: #9aa5ce;
+  --red: #f7768e;
+  --blue: #7dcfff;
+  --yellow: #e0af68;
+  --green: #9ece6a;
 }
 * {
   margin: 0;
@@ -17,6 +21,14 @@ body {
 
 input:focus {
   outline: none;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 .main-container {
@@ -62,5 +74,28 @@ input:focus {
 }
 
 .common-sites div {
-  padding: 2rem;
+  margin: 0 2rem;
+  padding: 1rem;
+}
+
+.common-sites div ul li {
+  padding: 0.5rem 0;
+}
+.common-sites {
+  .daily-websites {
+    border: solid 4px var(--red);
+    border-radius: 1rem;
+  }
+  .coding-websites {
+    border: solid 4px var(--blue);
+    border-radius: 1rem;
+  }
+  .emails-websites {
+    border: solid 4px var(--yellow);
+    border-radius: 1rem;
+  }
+  .social-websites {
+    border: solid 4px var(--green);
+    border-radius: 1rem;
+  }
 }
