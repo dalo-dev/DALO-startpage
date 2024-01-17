@@ -81,6 +81,7 @@ a:hover {
 .common-sites div {
   margin: 0 2rem;
   padding: 1rem;
+  text-align: center;
 }
 
 .common-sites div ul li {
