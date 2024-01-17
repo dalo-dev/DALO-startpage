@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap");
 :root {
   --background-color: #24283b;
+  --text-color: #9aa5ce;
 }
 * {
   margin: 0;
@@ -10,10 +11,11 @@
 
 body {
   font-family: "JetBrains Mono", monospace;
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
 .main-container {
-  background-color: var(--background-color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -28,5 +30,5 @@ body {
 }
 
 .clock #time {
-  font-size: 300%;
+  font-size: 3.5rem;
 }
