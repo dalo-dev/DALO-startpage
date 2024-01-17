@@ -6,6 +6,7 @@
   --blue: #7dcfff;
   --yellow: #e0af68;
   --green: #9ece6a;
+  --white: #d5d6db;
 }
 * {
   margin: 0;
@@ -29,6 +30,10 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+a:hover {
+  color: var(--white);
 }
 
 .main-container {
