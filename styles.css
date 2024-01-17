@@ -7,19 +7,28 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "JetBrains Mono", monospace;
+  color: var(--text-color);
 }
 
 body {
-  font-family: "JetBrains Mono", monospace;
   background-color: var(--background-color);
-  color: var(--text-color);
+}
+
+input:focus {
+  outline: none;
 }
 
 .main-container {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   min-height: 100vh;
+}
+
+.main-container section {
+  margin: 1rem;
 }
 
 .clock {
@@ -31,4 +40,18 @@ body {
 
 .clock #time {
   font-size: 3.5rem;
+}
+
+.search form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search .search-bar {
+  margin-left: 1rem;
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  border-bottom: solid 2px var(--text-color);
 }
