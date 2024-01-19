@@ -21,6 +21,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  animation: fadeInAnimation 1s;
 }
 
 input:focus {
@@ -44,7 +45,7 @@ a:hover {
   min-height: 100vh;
   max-width: 1024px;
   width: 100%;
-  margin: 1rem;
+  margin: 0 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -115,5 +116,14 @@ a:hover {
   }
   .social-websites {
     border: solid 4px var(--green);
+  }
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
