@@ -18,6 +18,9 @@
 
 body {
   background-color: var(--background-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 input:focus {
@@ -38,11 +41,13 @@ a:hover {
 }
 
 .main-container {
+  min-height: 100vh;
+  max-width: 1024px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  min-height: 100vh;
 }
 
 .main-container section {
@@ -60,13 +65,19 @@ a:hover {
   font-size: 3.5rem;
 }
 
+.search {
+  width: 100%;
+}
+
 .search form {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: inherit;
 }
 
 .search .search-bar {
+  width: inherit;
   margin-left: 1rem;
   background: transparent;
   border: none;
@@ -75,38 +86,30 @@ a:hover {
 }
 
 .common-sites {
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
-}
-
-.common-sites div {
-  width: 200px;
-  height: 300px;
-  max-width: 100%;
-  margin: 0 2rem;
-  padding: 1rem;
-  text-align: center;
-}
-
-.common-sites div ul li {
-  padding: 0.5rem 0;
-}
-.common-sites {
+  div {
+    text-align: center;
+    border-radius: 1rem;
+    h2 {
+      font-size: 2rem;
+    }
+    ul li {
+      padding: 0.5rem 0;
+    }
+  }
   .daily-websites {
     border: solid 4px var(--red);
-    border-radius: 1rem;
   }
   .coding-websites {
     border: solid 4px var(--blue);
-    border-radius: 1rem;
   }
   .emails-websites {
     border: solid 4px var(--yellow);
-    border-radius: 1rem;
   }
   .social-websites {
     border: solid 4px var(--green);
-    border-radius: 1rem;
   }
 }
