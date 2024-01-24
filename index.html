@@ -1,78 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles.css" />
-    <title>New Tab</title>
-    <link rel="icon" type="image/x-icon" href="./favicon.ico?v=2" />
-  </head>
-  <body>
-    <main class="main-container">
-      <section class="clock">
-        <h1 id="time"></h1>
-        <p id="date"></p>
-      </section>
-      <section class="search">
-        <form action="https://google.com/search" method="get">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            aria-hidden="true"
-          >
-            <circle cx="11" cy="11" r="8"></circle>
-            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-          </svg>
-          <input
-            class="search-bar"
-            name="q"
-            type="search"
-            placeholder="Search..."
-          />
-        </form>
-      </section>
-      <section class="common-sites">
-        <div class="daily-websites">
-          <h2>Daily</h2>
-          <ul>
-            <li><a href="https://www.youtube.com/">Youtube</a></li>
-            <li><a href="https://web.whatsapp.com/">WhatsApp</a></li>
-            <li><a href="https://www.notion.so/">Notion</a></li>
-          </ul>
-        </div>
-        <div class="coding-websites">
-          <h2>Coding</h2>
-          <ul>
-            <li><a href="https://github.com/">Github</a></li>
-            <li><a href="https://www.udemy.com/">Udemy</a></li>
-            <li><a href="https://stackoverflow.com/">Stack Overflow</a></li>
-          </ul>
-        </div>
-        <div class="emails-websites">
-          <h2>Emails</h2>
-          <ul>
-            <li><a href="https://account.proton.me/switch">Proton</a></li>
-            <li><a href="https://mail.google.com/">Gmail</a></li>
-            <li><a href="https://outlook.office365.com/">Outlook</a></li>
-          </ul>
-        </div>
-        <div class="social-websites">
-          <h2>Social</h2>
-          <ul>
-            <li><a href="https://www.facebook.com/">Facebook</a></li>
-            <li><a href="https://www.reddit.com/">Reddit</a></li>
-            <li><a href="https://www.twitch.tv/">Twitch</a></li>
-          </ul>
-        </div>
-      </section>
-    </main>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
+  <title>New Tab</title>
+  <link rel="icon" type="image/x-icon" href="./favicon.ico?v=2">
+</head>
+
+<body>
+  <main class="main-container">
+    <section class="clock">
+      <h1 id="time"></h1>
+      <p id="date"></p>
+    </section>
+    <div class="search">
+      <form action="https://google.com/search" method="get">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input class="search-bar" name="q" type="search" placeholder="Search...">
+      </form>
+    </div>
+    <section class="common-sites">
+      <div class="daily-websites">
+        <h2>Daily</h2>
+        <ul>
+          <li><a href="https://www.youtube.com/">Youtube</a></li>
+          <li><a href="https://web.whatsapp.com/">WhatsApp</a></li>
+          <li><a href="https://www.notion.so/">Notion</a></li>
+        </ul>
+      </div>
+      <div class="coding-websites">
+        <h2>Coding</h2>
+        <ul>
+          <li><a href="https://github.com/">Github</a></li>
+          <li><a href="https://www.udemy.com/">Udemy</a></li>
+          <li><a href="https://stackoverflow.com/">Stack Overflow</a></li>
+        </ul>
+      </div>
+      <div class="emails-websites">
+        <h2>Emails</h2>
+        <ul>
+          <li><a href="https://account.proton.me/switch">Proton</a></li>
+          <li><a href="https://mail.google.com/">Gmail</a></li>
+          <li><a href="https://outlook.office365.com/">Outlook</a></li>
+        </ul>
+      </div>
+      <div class="social-websites">
+        <h2>Social</h2>
+        <ul>
+          <li><a href="https://www.facebook.com/">Facebook</a></li>
+          <li><a href="https://www.reddit.com/">Reddit</a></li>
+          <li><a href="https://www.twitch.tv/">Twitch</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
   <script src="./script.js"></script>
+</body>
+
 </html>
