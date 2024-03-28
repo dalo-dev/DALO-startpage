@@ -7,20 +7,15 @@ const dateOptions = {
   day: "numeric",
 };
 
-const updateTime = function () {
-  const date = new Date();
-  const hours = date.getHours();
-  const minutes = date.getMinutes();
-  const seconds = date.getSeconds();
-
-  const clockStr = `${hours.toString().padStart(2, "0")}:${minutes
-    .toString()
-    .padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
-
-  timeElement.innerText = clockStr;
-  dateElement.innerText = date.toLocaleDateString(undefined, dateOptions);
-
-  setTimeout(updateTime, 1000);
-};
-
-updateTime();
+setInterval(() => {
+  const now = new Date();
+  timeElement.innerText = new Intl.DateTimeFormat(navigator.language, {
+    hour: "numeric",
+    minute: "numeric",
+    second: "numeric",
+  }).format(now);
+  dateElement.innerText = new Intl.DateTimeFormat(
+    navigator.language,
+    dateOptions
+  ).format(now);
+}, 1000);
